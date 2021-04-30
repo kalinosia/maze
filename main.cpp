@@ -18,15 +18,19 @@ int main() {
 	Player player;
 	int newx = player.x;
 	int newy = player.y;
+	
+	//std::cout << "size od row " << sizeof table / sizeof table[0] << 
+	//	"\nsize of column "<< sizeof table[0] / sizeof(int)<<"\n"; 
 
 	while (true) {
-
+		
 	//std::cout << "xnew= " << newx << ", newy= " << newy << "\n";
 	//std::cout << "table[x][y]= " << table[newy][newx] << "\n";
 
 	player.update(newx, newy);
 	board.update(player.x, player.y);
-	
+
+	player.ifwin();
 	//std::cout << "x= " << player.x << ", y= " << player.y << "\n";
 	//std::cout << "table[x][y]= " << table[player.y][player.x] << "\n";
 	

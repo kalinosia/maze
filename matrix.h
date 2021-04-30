@@ -1,5 +1,13 @@
 #pragma once
-#ifndef MY_GLOBALS_H
-#define MY_GLOBALS_H
+
 extern const int table[11][10];
-#endif
+extern const int table2[][13];
+/*
+struct Table {
+	//Table(std::cout << "Constr. table\n";)
+public:
+	int *table(int level) {
+		if (level==1) return &table2[10][13]
+	}
+}
+;*/

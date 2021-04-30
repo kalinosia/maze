@@ -16,12 +16,14 @@ void Player::update(int &newx, int &newy) {
 	} else if (table[newy][newx] == 2) {
 		x = newx;
 		y = newy;
-		std::cout << "You WIN!!!!\n";
+		win = true;
+		//std::cout << "You WIN!!!!\n";
 	}
 	else {
 		newx = x;
 		newy = y;
 	}
-	
 };
-
+void Player::ifwin() {
+	if (win) std::cout << "YOU WIN!!!\n"; //can do more or block keys
+};
